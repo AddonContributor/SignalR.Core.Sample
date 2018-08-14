@@ -27,7 +27,7 @@ ENV ASPNETCORE_URLS=http://+:80 \
 WORKDIR /app
 EXPOSE 80
 
-FROM microsoft/dotnet:2.1-sdk AS build
+FROM microsoft/dotnet:2.1-sdk-alpine3.7 AS build
 WORKDIR /src
 COPY signalrchat.sln ./
 COPY signalrchat.csproj ./
